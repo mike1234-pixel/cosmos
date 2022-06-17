@@ -26,3 +26,17 @@ to make it look better.
 
 To run this app you will need `nodejs` and `yarn`.  
 Run `yarn` in this folder to install the dependencies and `yarn start` to start the app.
+
+## Approach
+
+In setting up this project and its architecture I have adopted maintable patterns that could handle the expansion of the application should it be further developed.
+
+## State Management
+
+The application uses redux for global state management, and hooks may be used for state that is anticipated to only ever be used locally.
+
+## Ajax
+
+`axios` is used for http requests, and the requests are handled by thunk action creators.
+
+
