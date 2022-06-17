@@ -1,12 +1,12 @@
-import { useEffect } from 'react'
-import style from './App.module.scss';
+import React, { useEffect } from 'react'
 import Home from './pages/Home';
 import Hero from './components/Hero';
 import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
+import { bindActionCreators, Dispatch } from 'redux'
 import { savePlanets } from './actions';
+import { AppProps } from './types/props/index'
 
-const App = (props) => {
+const App: React.FC<AppProps> = (props: AppProps) => {
 
   const { savePlanets } = props
 
@@ -15,15 +15,15 @@ const App = (props) => {
   }, [])
 
   return (
-    <div className={style.main}>
+    <div>
       <Hero />
-      <Home />
+      <Home planets={[]} />
     </div>
   )
 
 }
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch: Dispatch) => {
   return {
     dispatch,
     ...bindActionCreators({ savePlanets }, dispatch),

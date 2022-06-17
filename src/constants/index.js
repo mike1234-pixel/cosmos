@@ -1,1 +1,0 @@
-export const SAVE_PLANETS = 'SAVE_PLANETS'

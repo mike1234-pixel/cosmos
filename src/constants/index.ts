@@ -1,0 +1,1 @@
+export const SAVE_PLANETS: string = 'SAVE_PLANETS'

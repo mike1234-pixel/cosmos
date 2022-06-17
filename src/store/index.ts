@@ -7,4 +7,7 @@ const store = configureStore({
     middleware: [thunk],
 })
 
+export type RootState = ReturnType<typeof rootReducer>;
+
 export default store;
+
