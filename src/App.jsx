@@ -8,7 +8,7 @@ import { savePlanets } from './actions';
 
 const App = (props) => {
 
-  const { planets, savePlanets } = props
+  const { savePlanets } = props
 
   useEffect(() => {
     savePlanets()
@@ -16,17 +16,12 @@ const App = (props) => {
 
   return (
     <div className={style.main}>
-      {JSON.stringify(planets)}
       <Hero />
       <Home />
     </div>
   )
 
 }
-
-const mapStateToProps = (state) => ({
-  planets: state.planetsState.planets
-});
 
 const mapDispatchToProps = (dispatch) => {
   return {
@@ -35,4 +30,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(null, mapDispatchToProps)(App);
