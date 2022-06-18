@@ -1,7 +1,9 @@
-## Test
+## App
 This app displays the exoplanets  discovered by TESS in 2022 using the API endpoint `https://binary-vision.s3.eu-west-2.amazonaws.com/discoveries.json`
 
-The data is by `releasedate`.
+The data is sorted by `releasedate`.
+
+Clicking on a planet runs a google search for that planet.
 
 ## Running
 
