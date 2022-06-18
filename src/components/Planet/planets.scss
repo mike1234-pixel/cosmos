@@ -1,0 +1,25 @@
+.planet {
+    &--a {
+        background: url('./exo-a.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &--b {
+        background: url('./exo-b.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &--c {
+        background: url('./exo-c.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &--d {
+        background: url('./exo-d.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

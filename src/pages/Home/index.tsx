@@ -23,16 +23,10 @@ const Home: React.FC<HomeProps> = (props: HomeProps) => {
         {sortedPlanets.map((planet: PlanetI, i) => {
           return (
             <div className='col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center'>
-
               <Planet planet={planet} key={planet.pl_name + i} />
-
             </div>
           )
         })}
-
-
-
-
       </div>
     </div>
   )
