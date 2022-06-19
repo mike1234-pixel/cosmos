@@ -11,3 +11,7 @@ export interface HomeProps {
 export interface PlanetProps {
     planet: PlanetI
 }
+
+export interface HeroProps {
+    planets: Array<PlanetI>
+}

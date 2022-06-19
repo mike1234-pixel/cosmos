@@ -1,25 +1,23 @@
+@mixin planetBackgroundStyles($imagePath) {
+    background: url($imagePath);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .planet {
     &--a {
-        background: url('./exo-a.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
+        @include planetBackgroundStyles('./exo-a.jpg');
     }
 
     &--b {
-        background: url('./exo-b.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
+        @include planetBackgroundStyles('./exo-b.jpg');
     }
 
     &--c {
-        background: url('./exo-c.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
+        @include planetBackgroundStyles('./exo-c.jpg');
     }
 
     &--d {
-        background: url('./exo-d.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
+        @include planetBackgroundStyles('./exo-d.jpg');
     }
 }

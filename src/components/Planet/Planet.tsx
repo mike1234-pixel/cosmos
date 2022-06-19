@@ -4,6 +4,7 @@ import urlify from '../../functions/urlify';
 import style from './style.module.scss';
 import './planets.scss'
 import ScrollAnimation from 'react-animate-on-scroll';
+import tone from '../../assets/tone.mp3'
 
 const Planet: React.FC<PlanetProps> = (props: PlanetProps) => {
 
@@ -19,9 +20,14 @@ const Planet: React.FC<PlanetProps> = (props: PlanetProps) => {
         setPlanetClass('planet--' + randomSuffix)
     }, [])
 
+    const playTone: () => void = () => {
+        const audio: HTMLAudioElement = new Audio(tone)
+        audio.play()
+    }
+
     return (
         <ScrollAnimation animateIn="fadeIn" className={style.fade}>
-            <a href={`https://www.google.com/search?q=${urlify(planet.pl_name)}&sa=X&ved=2ahUKEwjBtJCt0bb4AhWjNOwKHSvgC5oQ7xYoAHoECAEQMQ&biw=1440&bih=671&dpr=2`} target="_blank" className={`${style.planet} ${planetClass}`}>
+            <a href={`https://www.google.com/search?q=${urlify(planet.pl_name)}&sa=X&ved=2ahUKEwjBtJCt0bb4AhWjNOwKHSvgC5oQ7xYoAHoECAEQMQ&biw=1440&bih=671&dpr=2`} onClick={playTone} target="_blank" className={`${style.planet} ${planetClass}`}>
                 <p className="planet__name">Name: {planet.pl_name}</p>
                 <p className="planet__release-date">Release Date: {planet.releasedate}</p>
                 <p className="planet__rade">Rade: {planet.pl_rade}</p>

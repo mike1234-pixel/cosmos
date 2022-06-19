@@ -16,7 +16,7 @@ const App: React.FC<AppProps> = (props: AppProps) => {
 
   return (
     <div>
-      <Hero />
+      <Hero planets={[]} />
       <Home planets={[]} />
     </div>
   )
