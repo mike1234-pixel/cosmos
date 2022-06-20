@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/cosmos/static/css/main.e8e9d264.css",
+    "main.js": "/cosmos/static/js/main.589328a1.js",
+    "static/media/background.jpg": "/cosmos/static/media/background.cc1faa0314bb3be36aa1.jpg",
+    "static/media/stars6.jpg": "/cosmos/static/media/stars6.598c6b055be6ca943083.jpg",
+    "static/media/exo-c.jpg": "/cosmos/static/media/exo-c.f9b6c85b3e1371cd1b42.jpg",
+    "static/media/exo-d.jpg": "/cosmos/static/media/exo-d.495fc7408e7a1b559d70.jpg",
+    "static/media/exo-a.jpg": "/cosmos/static/media/exo-a.a17d9d0c062e4b2d2f22.jpg",
+    "static/media/exo-b.jpg": "/cosmos/static/media/exo-b.99cd67a8cde13c7d04ac.jpg",
+    "static/media/tone.mp3": "/cosmos/static/media/tone.502438557a1c3b279568.mp3",
+    "index.html": "/cosmos/index.html",
+    "main.e8e9d264.css.map": "/cosmos/static/css/main.e8e9d264.css.map",
+    "main.589328a1.js.map": "/cosmos/static/js/main.589328a1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8e9d264.css",
+    "static/js/main.589328a1.js"
+  ]
+}
