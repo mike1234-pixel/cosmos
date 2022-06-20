@@ -3,8 +3,7 @@ import { Dispatch } from 'redux'
 import * as types from '../constants/index'
 import Planet from '../types/Planet'
 
-// type this action creator
-export const savePlanets = () => {
+export const savePlanets: () => (dispatch: Dispatch) => Promise<void> = () => {
 
     return (dispatch: Dispatch) => {
 

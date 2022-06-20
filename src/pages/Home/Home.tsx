@@ -13,24 +13,23 @@ const Home: React.FC<HomeProps> = (props: HomeProps) => {
   const [sortedPlanets, setSortedPlanets] = useState<Array<PlanetI>>([])
 
   useEffect(() => {
-    setSortedPlanets(planets.sort((a: PlanetI, b: PlanetI) => new Date(a.releasedate).valueOf() - new Date(b.releasedate).valueOf()))
+    planets.length > 0 && setSortedPlanets(planets.sort((a: PlanetI, b: PlanetI) => new Date(a.releasedate).valueOf() - new Date(b.releasedate).valueOf()))
   }, [planets])
 
   return (
     <div className={`container-sm ${style.main}`}>
-
       <div className="row">
-        {sortedPlanets.map((planet: PlanetI, i) => {
-          return (
-            <div className='col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center'>
-              <Planet planet={planet} key={planet.pl_name + i} />
-            </div>
-          )
-        })}
+        {planets.length > 0 ?
+          sortedPlanets.map((planet: PlanetI, i: number) => {
+            return (
+              <div key={planet.pl_name + i} className='col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center'>
+                <Planet planet={planet} />
+              </div>
+            )
+          }) : <p className={style.loading}>loading...</p>}
       </div>
     </div>
   )
-
 };
 
 const mapStateToProps = (state: RootState) => ({

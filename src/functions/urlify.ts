@@ -1,3 +1,3 @@
-const urlify = (str: string) => str.toLowerCase().replace(/ /g, '-')
+const urlify: (str: string) => (string) = (str: string) => str.toLowerCase().replace(/ /g, '-')
 
 export default urlify

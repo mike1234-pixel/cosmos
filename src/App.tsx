@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import Home from './pages/Home';
-import Hero from './components/Hero';
+import Home from './pages/Home/Home';
+import Hero from './components/Hero/Hero';
 import { connect } from 'react-redux'
 import { bindActionCreators, Dispatch } from 'redux'
 import { savePlanets } from './actions';
@@ -12,7 +12,7 @@ const App: React.FC<AppProps> = (props: AppProps) => {
 
   useEffect(() => {
     savePlanets()
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div>
