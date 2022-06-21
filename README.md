@@ -31,3 +31,7 @@ This app uses TypeScript as a way to write more expressive and documented code, 
 ## BEM
 
 This app uses the `block-element-modifier` pattern for consistent class naming.
+
+## Testing
+
+Unit tests are contained within the directory of the file being tested. Run `yarn test`.
