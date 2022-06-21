@@ -35,3 +35,7 @@ This app uses the `block-element-modifier` pattern for consistent class naming.
 ## Testing
 
 Unit tests are contained within the directory of the file being tested. Run `yarn test`.
+
+## Further Development
+
+Add more test coverage and create a CI pipeline.
